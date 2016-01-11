@@ -7,7 +7,6 @@ After I lead you through the introduction, I'll let you practice by completing t
 You may want to refer to my [Intro to PHP tutorial](https://info344.ischool.uw.edu/course/tutorials/php-intro), as well as the [PHP documentation](https://secure.php.net/manual/en/). 
 
 ## Simple Warm-Up
-
 In a new PHP script named `warmup.php`:
 - declare a variable and initialize it to a random integer between 1 and 100
 - echo that value, embedding it in the message "your new random value is nnn", using an interpolated string. For example, if the new random number was 50, your message should say "your new random value is 50". You should also embed a newline character so that the next prompt appears on the next line in the terminal.
