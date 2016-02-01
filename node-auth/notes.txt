@@ -1,0 +1,10 @@
+// Get GitHub client-id and password
+GitHub->Applications->Developer Applications->Register new application
+
+// Generate a good password!
+export COOKIE_SIG_SECRET=$(uuidgen)
+echo $COOKIE_SIG_SECRET
+
+// Interacting with redis
+redis-cli
+keys *
