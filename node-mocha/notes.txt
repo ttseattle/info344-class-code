@@ -1,0 +1,4 @@
+MOCHAjs
+- Mocha is the testing framework 
+- To install, just run "npm install -g mocha"
+- Syntax: mocha "TEST LOCATION", e.g. mocha test/shorten-test.js
