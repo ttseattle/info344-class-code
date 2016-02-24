@@ -1,0 +1,58 @@
+Go
+- no semicolons
+- doesn't like having two files in the same folder with a main function 
+
+UTF-8
+- Go made by same people who made UTF-8
+- allows more characters 
+- a single character may consume 1, 2, 3, or even 4 bytes
+- to iterate over a string, need to use runes
+- treat string s as array of unicode characters 
+	- use s as an array of bytes --> gives wrong results 
+	- use RANGE 
+	
+Slices vs Arrays
+Array 
+- memory buffer where we alloc a fix size elements; array of them in order 
+- contigous block of memory where every element in it is the same size 
+- fixed length 
+- must be allocated of a certain size 
+- how to append another element to a full array? 
+	- next slot might not be free 
+	- grow array --> most reallocate a new space and copy over the contents of the old array 
+	- Java and JS
+		- allocates a new array for you when this happens that is maybe 2x as back, done transparently
+		- JS .push --> creates a new memory block and copies, resets where current array is pointing to in memory 
+- Go has a special structure for dynamic arrays 
+
+Pass by Value
+- makes a copy of data 
+- doesn't modify old value 
+- Java
+	- int 
+
+Pass by Reference 
+- allows you to modify something being pointed to in memory 
+- & gives you the address of an element, i.e. the pointer to it 
+- Java 
+	- Integer
+- in Go, want to pass a pointer if the parameter is large in memory 
+
+Tries
+- optimally wide and not deep
+- entire Trie
+	- root Node
+	- methods 
+		- AddEntry
+		- FindEntries 
+			- return a slice of strings that contain the prefix 
+			- maximum number of entries to find 
+- each Node contains
+	- letter
+	- children 
+		- Map
+			- key = rune
+			- value = pointer to a node 
+	- end of word denotion
+Help Sites 
+- GoByExample
