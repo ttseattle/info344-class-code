@@ -1,0 +1,2 @@
+Unlike Express, Go does not have a middleware pattern where order matters
+It uses MUCK, which means that the longest url path here wins
