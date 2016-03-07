@@ -1,2 +1,12 @@
 Unlike Express, Go does not have a middleware pattern where order matters
 It uses MUCK, which means that the longest url path here wins
+
+Creating Server
+- go build
+	- ./gowebserver
+		- runs compiled version 
+- go install
+	- takes build executable and moves to bin directory 
+	- ls $GOPATH/bin 
+	- gowebserver 
+	- cd $GOPATH/bin --> can't find static files
